@@ -1,12 +1,11 @@
 import React from "react";
 import "./index.scss";
-import pic from "./Banner.jpg";
 
 export const Header = () => {
   return (
     <>
       <div className="header_wrapper">
-        <header className="header">
+        <header className="header" id="main">
           <svg
             className="header_logo"
             width="192"
@@ -25,10 +24,10 @@ export const Header = () => {
             <nav>
               <ul className="header_menu_item">
                 <li>
-                  <a href="#">Preise</a>
+                  <a href="#main">Preise</a>
                 </li>
                 <li>
-                  <a href="#">Referenzen</a>
+                  <a href="#portfolio">Referenzen</a>
                 </li>
                 <li>
                   <a href="#">Kontakt</a>
