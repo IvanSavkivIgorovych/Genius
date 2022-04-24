@@ -1,7 +1,13 @@
 .footer {
+  &_wrapper {
+    position: relative;
+  }
   &_menu {
+    background: #ffffff;
     max-width: 1060px;
-    margin: 0 auto;
+    margin: 0 auto -48px;
+    position: relative;
+    z-index: 1;
     font-size: 22px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
     &_item {
@@ -87,4 +93,72 @@
       margin-right: 35px;
     }
   }
+  &_form {
+    padding: 120px 0;
+    max-width: 568px;
+    margin: 0 auto;
+    text-align: center;
+    #organization,
+    #about {
+      width: 100%;
+    }
+    #organization {
+      margin-bottom: 20px;
+    }
+    #email,
+    #tel {
+      min-width: 278px;
+    }
+    input,
+    textarea {
+      padding: 19px 27px;
+      margin-bottom: 30px;
+      &::placeholder {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        letter-spacing: 0.1em;
+        color: #abaaaa;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+    textarea {
+      resize: none;
+    }
+    input[type="submit"] {
+      cursor: pointer;
+      min-width: 198px;
+      text-align: center;
+      margin-bottom: 0;
+      padding: 16px 42px;
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      color: #ffffff;
+      border: none;
+      transition: background ease-in-out 0.5s;
+      background: url(./Button.png) no-repeat right center, #0063b2;
+      &:hover {
+        background-position-x: 150px;
+      }
+    }
+  }
+  &_header {
+    margin: 0 0 30px;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+}
+
+.input_wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
