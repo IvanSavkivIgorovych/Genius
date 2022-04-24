@@ -88,43 +88,48 @@ export const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="footer_form">
-            <h2 className="footer_header">Schreiben Sie uns!</h2>
-            <form action="" method="post">
-              <input
-                required
-                type="text"
-                name="organization"
-                id="organization"
-                placeholder="Firma / Organisation"
-              />
-              <div className="input_wrapper">
+          <div className="footer_form_wrapper">
+            <div className="footer_form">
+              <h2 className="footer_header">Schreiben Sie uns!</h2>
+              <form action="" method="post">
                 <input
                   required
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="E-mail"
+                  type="text"
+                  name="organization"
+                  id="organization"
+                  placeholder="Firma / Organisation"
                 />
-                <input
+                <div className="input_wrapper">
+                  <input
+                    required
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="E-mail"
+                  />
+                  <input
+                    required
+                    type="tel"
+                    name="tel"
+                    id="tel"
+                    placeholder="Telefon"
+                  />
+                </div>
+                <textarea
                   required
-                  type="tel"
-                  name="tel"
-                  id="tel"
-                  placeholder="Telefon"
-                />
-              </div>
-              <textarea
-                required
-                name="about"
-                id="about"
-                cols="30"
-                rows="6"
-                placeholder="Was ist ihr anliegen?"
-              ></textarea>
-              <input type="submit" value="SENDEN" />
-            </form>
+                  name="about"
+                  id="about"
+                  cols="30"
+                  rows="6"
+                  placeholder="Was ist ihr anliegen?"
+                ></textarea>
+                <input type="submit" value="SENDEN" />
+              </form>
+            </div>
           </div>
+        </div>
+        <div className="footer_copyright">
+          © 2019 Genius Web Agentur. Alle Rechte vorbehalten
         </div>
       </div>
     </>
