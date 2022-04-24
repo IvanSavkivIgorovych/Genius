@@ -30,7 +30,7 @@ export const Header = () => {
                   <a href="#portfolio">Referenzen</a>
                 </li>
                 <li>
-                  <a href="#">Kontakt</a>
+                  <a href="#footer">Kontakt</a>
                 </li>
               </ul>
             </nav>
