@@ -1,9 +1,13 @@
 .header {
+  &_logo {
+    cursor: pointer;
+  }
   display: flex;
   justify-content: space-between;
   &_menu {
     display: flex;
     align-items: center;
+    font-size: 22px;
     nav {
       display: flex;
       align-items: center;
@@ -20,6 +24,11 @@
       a {
         color: #0063b2;
         text-decoration: none;
+        text-transform: uppercase;
+        &:hover {
+          transition: opacity ease-in-out 0.2s;
+          opacity: 0.5;
+        }
       }
     }
   }
@@ -31,29 +40,36 @@
     padding: 0 17px;
     margin-left: 22px;
     border-left: 1px solid #c7c7c7;
+    color: #8d8d8d;
+    cursor: pointer;
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      line-height: 16px;
+      i {
+        align-self: baseline;
+        margin-left: 5px;
+      }
+    }
+  }
+  &_banner {
+    min-height: 398px;
+    font-size: 0;
+    background: linear-gradient(
+        0deg,
+        rgba(0, 99, 178, 0.29),
+        rgba(0, 99, 178, 0.29)
+      ),
+      url(Banner.jpg) no-repeat;
   }
 }
 
 .arrow {
-  border: solid black;
+  border: solid #8d8d8d;
   border-width: 0 3px 3px 0;
   display: inline-block;
-  padding: 3px;
-}
-
-.right {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-}
-
-.left {
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
-}
-
-.up {
-  transform: rotate(-135deg);
-  -webkit-transform: rotate(-135deg);
+  padding: 4px;
 }
 
 .down {
